@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/estylocontacto.css" />
+    <link rel="stylesheet" href="normalize.css" />
+
+    <title>Hoja de Contacto</title>
+  </head>
+  <body>
+    <form action="php/contacto.php" method="POST">
+      <!-- tienes que escribir la ruta en la que está -->
+      <h2>CONTACTO</h2>
+      <input type="text" name="nombre" placeholder="nombre" required /> <br />
+      <br />
+
+      <input type="text" name="mail" placeholder="mail" required /> <br />
+      <br />
+
+      <input type="phone" name="phone" placeholder="phone" required /> <br />
+      <br />
+
+      <textarea
+        name="mensaje"
+        placeholder="Escriba aqui su mensaje"
+        required
+      ></textarea>
+      <br />
+      <br />
+
+      <input type="Submit" value="Enviar" name="envio" />
+
+      <script>
+        document.forms["Hoja de Contacto"].submit();
+      </script>
+    </form>
+  </body>
+</html>
